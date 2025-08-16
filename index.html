@@ -12,16 +12,20 @@
         h1 {
             background-color: #730C02;
             color: ghostwhite;
+            margin: 0;
             display: flex;
-            padding: 65px;
-            text-transform: uppercase;
-            justify-content: center;
-            border-radius: 5px;
-            letter-spacing: 10px;
-        }
-        h3 {
+            padding: 10px;
+        font-size: 50px;
+    letter-spacing: 5px;
+text-transform: uppercase;
+}      
+         h3 {
             color: #F2762E;
         }
+        #receitas img {
+            width: 100%;
+            height: 170px;
+             }
         html {
             background-color: #F2B077;
             display: flex;
@@ -29,28 +33,34 @@
        
         }
         body {
-            margin: 800px;
+            margin: 20px;
             background-color: #B0D1D9;
         }
         th {
             background-color: #730C02;
-            color: #41A8BF;
             text-align: left;
         }
         td, th {
             border: 1px solid #F2B077;
         }
         table {
-            border-collapse: collapse;
+            width: 50%;
+            height: 170px;
         }
-        img {
-            width: 250px;
-            height: auto;
-            border: 10px solid #A66946;
-            padding: 10px;
+#receitas {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
         }
 
-        
+        #receitas div {
+            background-color: #black;
+            color: #fff
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+        }
+
         </style>
 </head>
 <body>
@@ -59,16 +69,22 @@
 
    <div id="receitas">
     <div>
-         <img src="img/bolo.jpg" alt="Chocolate Cake">
-    <p>Bolo de Chocolate</p>
+        <a href="chocolate.html">
+           <img src="img/bolo.jpg" alt="Chocolate Cake">
+         <p>Bolo de Chocolate</p>
+         </a>
    </div>
    <div>
-    <img src="img/apple.jpg" alt="Maçã do Amor">
-    <p>Maçã do Amor</p>
+    <a href="maçã.html">
+        <img src="img/apple.jpg" alt="Maçã do Amor">
+        <p>Maçã do Amor</p>
+    </a>
    </div>
    <div>
-    <img src="img/paodecristo.png" alt="Pão de Cristo">
+    <a href="paodecristo.html">
+            <img src="img/paodecristo.png" alt="Pão de Cristo">
     <p>Pão de Cristo</p>
+    </a>
    </div>
    </div>
 </body>
